@@ -10,3 +10,9 @@ const celebs = [
   "Richard Osman",
   "Emma Thompson",
 ];
+
+const makeLegend = name => `${name} is now a legend.`;
+
+const legendaryCelebs = celebs.map(celeb => makeLegend(celeb));
+
+const vowelCelebs = celebs.filter(celeb => celeb.toLowerCase().startsWith('aeiou'));
