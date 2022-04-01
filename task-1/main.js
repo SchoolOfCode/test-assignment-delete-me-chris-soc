@@ -15,4 +15,4 @@ const makeLegend = name => `${name} is now a legend.`;
 
 const legendaryCelebs = celebs.map(celeb => makeLegend(celeb));
 
-const vowelCelebs = celebs.filter(celeb => celeb.toLowerCase().startsWith('aeiou'));
+const vowelCelebs = celebs.filter(celeb => /^[aeiou]/i.test(celeb.toLowerCase()));
